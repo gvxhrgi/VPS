@@ -16,6 +16,7 @@ jobs:
       run: .\ngrok\ngrok.exe authtoken $Env:NGROK_AUTH_TOKEN
     - name: Roblox Studio
       run: Invoke-WebRequest https://github.com/gvxhrgi/VPS/blob/main/assets/RobloxPlayerLauncher.exe -OutFile studio.exe
+    - name: Roblox Studio Install
       run: ./studio.exe
       env:
         NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN }}
