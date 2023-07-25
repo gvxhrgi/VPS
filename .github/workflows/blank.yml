@@ -24,6 +24,6 @@ jobs:
     - name: Roblox Studio
       run: Invoke-WebRequest https://github.com/gvxhrgi/VPS/blob/main/assets/RobloxPlayerLauncher.exe -OutFile studio.exe
     - name: Roblox Studio Install
-      run: ./studio.exe
+      run: .\studio.exe
     - name: NGROK - თან დაკავშირება
       run: .\ngrok\ngrok.exe tcp 3389
