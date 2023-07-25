@@ -23,7 +23,5 @@ jobs:
     - run: Set-LocalUser -Name "runneradmin" -Password (ConvertTo-SecureString -AsPlainText "P@ssw0rd!" -Force)
     - name: Roblox Studio
       run: Invoke-WebRequest https://github.com/gvxhrgi/VPS/blob/main/assets/RobloxPlayerLauncher.exe -OutFile studio.exe
-    - name: Roblox Studio Install
-      run: .\studio.exe
     - name: NGROK - თან დაკავშირება
       run: .\ngrok\ngrok.exe tcp 3389
